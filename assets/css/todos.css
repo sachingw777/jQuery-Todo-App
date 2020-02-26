@@ -49,6 +49,12 @@ span {
 	display: inline-block;
 	transition: 0.2s linear;
 	opacity: 0;
+	float: left;
+}
+
+li:hover span{
+	width: 40px;
+	opacity: 1.0;
 }
 
 input{
@@ -64,6 +70,7 @@ input{
 input:focus{
 	background: #fff;
 	border: 3px solid #2980b9;
+	outline: none;
 }
 
 #container{
