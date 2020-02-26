@@ -11,3 +11,12 @@ $("ul").on("click", "span", function(event){
 	event.stopPropagation();
 });
 
+//input
+$("input").keypress(function(event){
+	if(event.which === 13){
+		var text = $(this).val();
+		//create a new li and add to ul
+		$(this).val("");
+		$("ul").append("<li><span>X </span>"+ text +"</li>");
+	}
+});
