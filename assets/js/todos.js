@@ -17,6 +17,10 @@ $("input").keypress(function(event){
 		var text = $(this).val();
 		//create a new li and add to ul
 		$(this).val("");
-		$("ul").append("<li><span>X </span>"+ text +"</li>");
+		$("ul").append("<li><span><i class='fa fa-trash'></i></span>" + text + "</li>");
 	}
+});
+
+$(".fa-plus").click(function(){
+	$("input").fadeToggle();
 });
